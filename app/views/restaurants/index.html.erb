@@ -1,22 +1,3 @@
-<html lang="ja">
+<% provide(:title, "お店を探す") %>
 
-<head>
-    <meta charset="utf-8">
-</head>
-
-<body>
-    <script>
-        async function callapi() {
-            const res = await fetch("https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=[956a34de305408c538c7b1281ac76922]&latitude=35.681382&longitude=139.76608399999998&range=1");https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=956a34de305408c538c7b1281ac76922&lunch=1&with_pet=1
-            const users = await res.json();
-            const rest = users.rest;
-            console.log(users);
-            Object.keys(rest).map(key => document.write('key:' + key + ' value:' + rest[key]["name"] + "<br>\n"));
-            document.write("Supported by ぐるなびWebService : https://api.gnavi.co.jp/api/scope/");
-        }
-        callapi();
-    </script>
-</body>
-
-
-</html>
+  

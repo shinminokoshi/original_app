@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   # 入力フォームからアカウント名情報をDBに保存するために追加
   def configure_permitted_parameters
-    added_attrs = [ :email, :name, :password, :password_confirmation ]
+    added_attrs = [ :email, :name, :password, :profile, :password_confirmation ]
     devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
     devise_parameter_sanitizer.permit :account_update, keys: added_attrs
     devise_parameter_sanitizer.permit :sign_in, keys: added_attrs
