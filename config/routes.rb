@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/help', to: 'static_pages#help'
   get '/about', to: 'static_pages#about'
   get '/restaurants/index', to: 'restaurants#index'
-  get 'users/show', to:'users#show'
+  get '/users/show', to: 'users#show'
 
   devise_for :users, :controllers => {
   :registrations => 'users/registrations',
@@ -13,8 +13,8 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
-    get "signup", :to => "users/registrations#new"
-    get "login", :to => "users/sessions#new"
-    get "logout", :to => "users/sessions#destroy"
+    get "/users/sign_up", :to => "users/registrations#new"
+    get "/users/sign_in", :to => "users/sessions#new"
+    get "/users/sign_out", :to => "users/sessions#destroy"
   end
 end
