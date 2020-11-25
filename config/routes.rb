@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/help', to: 'static_pages#help'
   get '/about', to: 'static_pages#about'
   get '/restaurants/index', to: 'restaurants#index'
-  get '/users/show', to: 'users#show'
+  get '/users/show', to:'users#show'
 
   devise_for :users, :controllers => {
   :registrations => 'users/registrations',
