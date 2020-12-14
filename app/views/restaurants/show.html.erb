@@ -1,0 +1,22 @@
+<% provide(:title, "店舗詳細") %>
+  <h1>店舗詳細</h1>
+  <div class="card mb-3" style=("max-width: 1000px;")>
+  <div class="row no-gutters">
+    <div class="col-lg-6">
+    　<% if @restaurant.shop_image1.present? %>
+        <%= image_tag @restaurant.shop_image1 %>
+    　<% else %>
+        <%= image_tag "https://placehold.jp/150x150.png" %>
+    　<% end%>    
+    </div>
+    <div class="col-lg-6">
+      <div class="card-body">
+        <p><%= @restaurant.name %></p>
+        <p><%= @restaurant.address %></p>
+        <p><%= @restaurant.tel %></p>
+        <p><%= @restaurant.business_hours %></p>
+      </div>
+    </div>
+  </div>
+</div>
+       
