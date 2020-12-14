@@ -40,6 +40,21 @@ body {
     text-align: center;
   }
 
+  .card {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #010811;/*文字色*/
+    background: #FFF;
+    border: solid 1px #010408;/*線*/
+    border-radius: 10px;/*角の丸み*/
+  }
+
+  .card-body {
+    padding-top: 20px;
+    text-align: center;
+  }
+
 
 
 
