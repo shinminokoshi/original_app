@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20201124070553) do
     t.string "pref"
     t.float "latitude"
     t.float "longitude"
+    t.string "shop_image1"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
